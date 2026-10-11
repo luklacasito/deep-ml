@@ -24,8 +24,8 @@ def k_means_clustering(points, k, initial_centroids, max_iterations) -> list[tup
         for j in range(k):
             mask = (assignments == j)
             new_centroids[j] = points_t[mask].mean(dim=0)
-            if torch.allclose(new_centroids, centroids, atol= 1e-4):
-                centroids= new_centroids
-                break
-            centroids=new_centroids
+        if torch.allclose(new_centroids, centroids, atol= 1e-4):
+            centroids= new_centroids
+            break
+        centroids=new_centroids
     return centroids.tolist()
