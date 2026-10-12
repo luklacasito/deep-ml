@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T12:17:49.819Z",
+  "generated_at": "2026-10-12T12:23:25.367Z",
   "items": {
     "problem:2": {
       "kind": "problem",
@@ -258,6 +258,19 @@
       "path": "problems/0107-implement-masked-self-attention",
       "first_solved_at": "2026-10-12T12:17:49.152Z",
       "last_pushed_at": "2026-10-12T12:17:49.152Z",
+      "language": "python",
+      "lines": 19
+    },
+    "problem:43": {
+      "kind": "problem",
+      "id": "43",
+      "title": "Implement Ridge Regression Loss Function",
+      "difficulty": "easy",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/43",
+      "path": "problems/0043-implement-ridge-regression-loss-function",
+      "first_solved_at": "2026-10-12T12:23:24.589Z",
+      "last_pushed_at": "2026-10-12T12:23:24.589Z",
       "language": "python",
       "lines": 19
     }
