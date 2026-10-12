@@ -1,0 +1,10 @@
+import torch
+
+def layer_normalization(X: torch.Tensor, gamma: torch.Tensor, beta: torch.Tensor, epsilon: float = 1e-5) -> torch.Tensor:
+    """
+    Perform Layer Normalization.
+    """
+    mu = X.mean(dim=-1, keepdim=True)
+    var = X.var(dim=-1, keepdim=True, unbiased=False)
+    X_hat = (X - mu) / torch.sqrt(var + epsilon)
+    return gamma * X_hat + beta
